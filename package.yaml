@@ -1,0 +1,30 @@
+name: hloc
+version: 1.0.0
+synopsis: Unix style command to parse comment from text
+description: Unix style command to parse comment from text
+maintainer: Brett Weaver
+license: MIT
+github: weavenet/hloc
+category: Development
+extra-source-files:
+  - CHANGELOG.md
+
+ghc-options: ""
+
+dependencies:
+  - base >= 4.9 && < 5
+  - containers
+  - split
+  - text
+
+executable:
+  main: Main.hs
+
+tests:
+  spec:
+    cpp-options: -DTEST
+    main: Test.hs
+    source-dirs:
+      - .
+    dependencies:
+      - HUnit
