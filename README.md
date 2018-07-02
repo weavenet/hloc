@@ -51,10 +51,14 @@ php: php
 
 New languages are defined by adding them to **Hloc.hs**.
 
-You will need to define single line comment characters, multi line comment pairs,
-exceptions and file extensions for the given language.
+You will need to define the following for a new language
 
-Submit a PR to **Hloc.hs** as well as adding a test to **languageTests** in **Test.hs**.
+* single line comment characters
+* multi line comment pairs
+* exceptions
+* file extensions
+
+Submit a PR to update [languages](https://github.com/weavenet/hloc/blob/8338a1a0b84403e0f9fe1f666fbe87411bb1a35b/Hloc.hs#L39-L50) as well as adding a test to **languageTests** in **Test.hs**.
 
 ## Build
 
